@@ -1,0 +1,50 @@
+<h1>Book New Event</h1>
+	<form ng-submit="submit()" >
+	
+	<div class="row">
+		<div class="col-md-3">
+			<label for="">Event Title</label>
+			<div class="input-group">
+			  	<span class="input-group-addon" id="basic-addon0"><i class="fa fa-user"></i></span>
+			  	<input type="text" class="form-control" ng-model="event.event_title" placeholder="Event Title" aria-describedby="basic-addon0">
+			</div>
+		</div>
+		<div class="col-md-3">
+			<label for="">Name</label>
+			<div class="input-group">
+			  	<span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+			  	<input type="text" class="form-control" ng-model="event.name" placeholder="Username" aria-describedby="basic-addon1">
+			</div>
+		</div>
+		<div class="col-md-3">
+			<label for="">Date/Time of event</label>
+			<div class="input-group">
+			  	<span class="input-group-addon" id="basic-addon2"><i class="fa fa-calendar"></i></span>
+			  	<input type="date" class="form-control" ng-model="event.date_of_event" aria-describedby="basic-addon2">
+			</div>
+		</div>
+		
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<label for="">Date/Time of reminder</label>
+			<div class="input-group">
+			  	<span class="input-group-addon" id="basic-addon4"><i class="fa fa-calendar"></i></span>
+			  	<input type="date" class="form-control" ng-model="event.date_of_reminder" aria-describedby="basic-addon4">
+			</div>
+		</div>
+	</div>
+ 	<br>
+ 	<div class="row">
+ 		<div class="col-md-12">
+ 			<label for="">Description</label>
+ 			<textarea name="" id="" ng-model="event.location" placeholder="Description" cols="30" rows="10" class="form-control"></textarea>
+ 		</div>
+ 	</div>
+ 	<div class="row m-10">
+ 		<div class="col-md-1 col-md-offset-11">
+ 			<input type="submit"  class="btn btn-success"   value="Add Event">
+ 		</div>
+ 	</div>
+
+ 	</form>

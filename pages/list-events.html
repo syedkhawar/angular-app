@@ -1,0 +1,46 @@
+
+
+<!--panel-->
+<div class="panel panel-default" ng-repeat="event in events">
+	<div class="panel-heading" data-toggle="collapse" data-target="#collapse1">
+		<h3 class="panel-title">
+		
+		</h3>
+	</div>
+	<div id="collapse1" class="collapse in">
+		<div class="panel-body">
+			<blockquote>
+				<table class="table table table-hover m-0">
+                    <tbody>
+                        <tr>
+                            <td><i class="fa fa-user" style="color:blue;"></i>&nbsp;&nbsp; Title:</td>
+                            <td id="">{{ event.event_title }}</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-user" style="color:blue;"></i>&nbsp;&nbsp; Name:</td>
+                            <td id="">{{ event.name }}</td>
+                        </tr>                        
+                        <tr>
+                            <td><i class="fa fa-calendar-check-o" style="color: #F05050;"></i>&nbsp;&nbsp;&nbsp;&nbsp; Date of event:</td>
+                            <td id="">{{ event.date_of_event }}</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-calendar-check-o" style="color: green"></i>&nbsp;&nbsp;&nbsp; Date of reminder:</td>
+                            <td id="created">{{ event.date_of_reminder }}</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-calendar-check-o" style="color: green"></i>&nbsp;&nbsp;&nbsp; Location:</td>
+                            <td id="created">{{ event.location }}</td>
+                        </tr>                        
+                    </tbody>
+                </table>
+                <h3>Description</h3>
+               	<p>
+               		
+               	</p>
+			</blockquote>
+			<button type="submit"  ng-click="delete( event.id )">Delete This Event</button>
+		</div>
+	</div>
+</div><!--/panel-->	
+ 	-
